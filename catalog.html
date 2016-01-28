@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+  <meta charset="UTF-8">
+  <title>Барбершоп «Бородинский»</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -10,7 +11,9 @@
       <nav class="main-navigation">
         <ul>
           <li>
-            <a href="#">Barbershop</a>
+            <a href="#">
+              <img src="img/logo-title.png" width="111" height="24">
+            </a>
           </li>
           <li>
             <a href="#">Информация</a>
@@ -54,7 +57,7 @@
 
     <form class="care-filter" action="http://localhost" method="post">
       <div class="care-filter-manufacturer">
-        <h2 class="care-filter-title">Производители:</h2>
+        <h3 class="care-filter-title">Производители:</h3>
         <input id="baxter" type="checkbox" name="baxter" checked>
         <label for="baxter">Baxter of california</label>
         <input id="natty" type="checkbox" name="natty">
@@ -69,7 +72,7 @@
         <label for="american">American crew</label>
       </div>
       <div class="care-filter-group">
-        <h2 class="care-filter-title">Группы товаров:</h2>
+        <h3 class="care-filter-title">Группы товаров:</h3>
         <input id="shaving" type="radio" name="care-group">
         <label for="shaving">Бритвенные принадлежнсти</label>
         <input id="care" type="radio" name="care-group" checked>
@@ -82,7 +85,7 @@
 
     <div class="care-items">
       <article class="care-item">
-        <img src="http://placehold.it/150x100">
+        <img src="img/item1.jpg" width="220" height="165">
         <p>
           Набор для путешествий<br>
           "Baxter of california"
@@ -94,7 +97,7 @@
       </article>
 
       <article class="care-item">
-        <img src="http://placehold.it/150x100">
+        <img src="img/item2.jpg" width="220" height="165">
         <p>
           Увлажняющий кондиционер<br>
           "Baxter of california"
@@ -106,7 +109,7 @@
       </article>
 
       <article class="care-item">
-        <img src="http://placehold.it/150x100">
+        <img src="img/item3.jpg" width="220" height="165">
         <p>
           Гель для волос<br>
           "Sauvecito"
@@ -118,7 +121,7 @@
       </article>
 
       <article class="care-item">
-        <img src="http://placehold.it/150x100">
+        <img src="img/item4.jpg" width="220" height="165">
         <p>
           Глина для укладки волос<br>
           "American crew"
@@ -130,7 +133,7 @@
       </article>
 
       <article class="care-item">
-        <img src="http://placehold.it/150x100">
+        <img src="img/item5.jpg" width="220" height="165">
         <p>
           Гель для волос<br>
           "American crew"
@@ -142,7 +145,7 @@
       </article>
 
       <article class="care-item">
-        <img src="http://placehold.it/150x100">
+        <img src="img/item6.jpg" width="220" height="165">
         <p>
           Набор для бритья<br>
           "Baxter of california"
@@ -154,10 +157,20 @@
       </article>
 
       <div class="care-items-paginator">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
+        <ul>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+        </ul>
       </div>
     </div>
   </main>
