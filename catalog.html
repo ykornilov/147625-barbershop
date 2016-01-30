@@ -41,23 +41,21 @@
   <main>
     <h1 class="title">Средства для ухода</h1>
 
-    <nav class="breadcrumbs">
-      <ul>
-        <li>
-          <a href="#">Главная</a>
-        </li>
-        <li>
-          <a href="#">Магазин</a>
-        </li>
-        <li>
-          <a href="#">Средства для ухода</a>
-        </li>
-      </ul>
-    </nav>
+    <ul class="breadcrumbs">
+      <li>
+        <a href="#">Главная</a>
+      </li>
+      <li>
+        <a href="#">Магазин</a>
+      </li>
+      <li>
+        <a href="#">Средства для ухода</a>
+      </li>
+    </ul>
 
     <form class="care-filter" action="http://localhost" method="post">
-      <div class="care-filter-manufacturer">
-        <h3 class="care-filter-title">Производители:</h3>
+      <fieldset class="care-filter-manufacturer">
+        <legend class="care-filter-title">Производители:</legend>
         <input id="baxter" type="checkbox" name="baxter" checked>
         <label for="baxter">Baxter of california</label>
         <input id="natty" type="checkbox" name="natty">
@@ -70,88 +68,88 @@
         <label for="murray">Murray's</label>
         <input id="american" type="checkbox" name="american" checked>
         <label for="american">American crew</label>
-      </div>
-      <div class="care-filter-group">
-        <h3 class="care-filter-title">Группы товаров:</h3>
-        <input id="shaving" type="radio" name="care-group">
+      </fieldset>
+      <fieldset class="care-filter-group">
+        <legend class="care-filter-title">Группы товаров:</legend>
+        <input id="shaving" type="radio" name="care-group" value="shaving">
         <label for="shaving">Бритвенные принадлежнсти</label>
-        <input id="care" type="radio" name="care-group" checked>
+        <input id="care" type="radio" name="care-group" value="care" checked>
         <label for="care">Средства для ухода</label>
-        <input id="accessories" type="radio" name="care-group">
+        <input id="accessories" type="radio" name="care-group" value="accessories">
         <label for="accessories">Аксессуары</label>
-      </div>
+      </fieldset>
       <input class="care-filter-btn" type="submit" value="Показать">
     </form>
 
     <div class="care-items">
       <article class="care-item">
         <img src="img/item1.jpg" width="220" height="165">
-        <p>
-          Набор для путешествий<br>
-          "Baxter of california"
-        </p>
+        <a class="care-item-description" href="#">
+          <span class="care-item-description-category">Набор для путешествий</span>
+          <span class="care-item-description-title">"Baxter of california"</span>
+        </a>
         <div class="care-item-purchase">
-          <p class="care-item-purchase-price">2 900 руб.</p>
+          <span class="care-item-purchase-price">2 900 руб.</span>
           <a class="care-item-purchase-btn" href="#">Купить</a>
         </div>
       </article>
 
       <article class="care-item">
         <img src="img/item2.jpg" width="220" height="165">
-        <p>
-          Увлажняющий кондиционер<br>
-          "Baxter of california"
-        </p>
+        <a class="care-item-description" href="#">
+          <span class="care-item-description-category">Увлажняющий кондиционер</span>
+          <span class="care-item-description-title">"Baxter of california"</span>
+        </a>
         <div class="care-item-purchase">
-          <p class="care-item-purchase-price">750 руб.</p>
+          <span class="care-item-purchase-price">750 руб.</span>
           <a class="care-item-purchase-btn" href="#">Купить</a>
         </div>
       </article>
 
       <article class="care-item">
         <img src="img/item3.jpg" width="220" height="165">
-        <p>
-          Гель для волос<br>
-          "Sauvecito"
-        </p>
+        <a class="care-item-description" href="#">
+          <span class="care-item-description-category">Гель для волос</span>
+          <span class="care-item-description-title">"Sauvecito"</span>
+        </a>
         <div class="care-item-purchase">
-          <p class="care-item-purchase-price">290 руб.</p>
+          <span class="care-item-purchase-price">290 руб.</span>
           <a class="care-item-purchase-btn" href="#">Купить</a>
         </div>
       </article>
 
       <article class="care-item">
         <img src="img/item4.jpg" width="220" height="165">
-        <p>
-          Глина для укладки волос<br>
-          "American crew"
-        </p>
+        <a class="care-item-description" href="#">
+          <span class="care-item-description-category">Глина для укладки волос</span>
+          <span class="care-item-description-title">"American crew"</span>
+        </a>
         <div class="care-item-purchase">
-          <p class="care-item-purchase-price">500 руб.</p>
+          <span class="care-item-purchase-price">500 руб.</span>
           <a class="care-item-purchase-btn" href="#">Купить</a>
         </div>
       </article>
 
       <article class="care-item">
         <img src="img/item5.jpg" width="220" height="165">
-        <p>
-          Гель для волос<br>
-          "American crew"
-        </p>
+        <a class="care-item-description" href="#">
+          <span class="care-item-description-category">Гель для волос</span>
+          <span class="care-item-description-title">"American crew"</span>
+        </a>
         <div class="care-item-purchase">
-          <p class="care-item-purchase-price">300 руб.</p>
+          <span class="care-item-purchase-price">300 руб.</span>
           <a class="care-item-purchase-btn" href="#">Купить</a>
         </div>
       </article>
 
       <article class="care-item">
         <img src="img/item6.jpg" width="220" height="165">
-        <p>
-          Набор для бритья<br>
-          "Baxter of california"
-        </p>
+        <a class="care-item-description" href="#">
+          <span class="care-item-description-category">Набор для бритья</span>
+          <span class="care-item-description-title">"Baxter of california"</span>
+        </a>
         <div class="care-item-purchase">
-          <p class="care-item-purchase-price">3 900 руб.</p>
+          <span class="care-item-purchase-price">3 900 руб.</span>
           <a class="care-item-purchase-btn" href="#">Купить</a>
         </div>
       </article>
